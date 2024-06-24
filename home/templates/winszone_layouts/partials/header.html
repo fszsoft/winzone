@@ -1,0 +1,326 @@
+{% load static %}
+<!-- Header
+		    ================================================== -->
+<header class="clearfix">
+    <!-- Bootstrap navbar -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+
+        <!-- Top line -->
+        <div class="top-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <ul class="top-line-list">
+                            <li>
+                                <span class="city-weather">London, United Kingdom</span>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="24px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+											<path fill="#777777" d="#"></path>
+										</svg>
+                                <span class="cel-temperature">+7</span>
+                            </li>
+                            <li><span class="time-now">Thursday 8 January 2015 / 21:20</span></li>
+                            <li><a href="#">Log In</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Purchase Theme</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Top line -->
+
+        <!-- Logo & advertisement -->
+        <div class="logo-advertisement">
+            <div class="container">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Logo & advertisement -->
+
+        <!-- list line posts -->
+        <div class="list-line-posts">
+            <div class="container">
+
+                <div class="owl-wrapper">
+                    <div class="owl-carousel" data-num="3">
+
+                        <div class="item list-post">
+                            <img src="{% static 'upload/news-posts/listw5.jpg' %}" alt="">
+                            <div class="post-content">
+                                <a href="politics-category.html">Politics</a>
+                                <h2><a href="single-post.html">Donec odio. Quisque volutpat mattis eros. Nullam malesuada </a></h2>
+                                <ul class="post-tags">
+                                    <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item list-post">
+                            <img src="{% static 'upload/news-posts/listw4.jpg' %}" alt="">
+                            <div class="post-content">
+                                <a href="politics-category.html">World</a>
+                                <h2><a href="single-post.html">Nullam malesuada erat ut turpis. Suspendisse urna nibh</a></h2>
+                                <ul class="post-tags">
+                                    <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item list-post">
+                            <img src="{% static 'upload/news-posts/listw3.jpg' %}" alt="">
+                            <div class="post-content">
+                                <a href="politics-category.html">Business</a>
+                                <h2><a href="single-post.html">Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. </a></h2>
+                                <ul class="post-tags">
+                                    <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item list-post">
+                            <img src="{% static 'upload/news-posts/listw2.jpg' %}" alt="">
+                            <div class="post-content">
+                                <a href="politics-category.html">Election</a>
+                                <h2><a href="single-post.html">Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. </a></h2>
+                                <ul class="post-tags">
+                                    <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End list line posts -->
+
+        <!-- navbar list container -->
+        <div class="nav-list-container">
+            <div class="container">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-left">
+
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li class="drop-arrow"><a href="politics-category.html">Politics</a>
+                            <div class="megadropdown">
+                                <div class="container">
+                                    <div class="inner-megadropdown world-dropdown">
+                                        <div class="filter-block">
+                                            <ul class="filter-posts">
+                                                <li><a href="#">All</a></li>
+                                                <li><a href="#">Perspectives</a></li>
+                                                <li><a href="#">Congress</a></li>
+                                                <li><a class="active" href="#">Agenda</a></li>
+                                                <li><a href="#">White House</a></li>
+                                                <li><a href="#">Others</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="posts-filtered-block">
+                                            <div class="owl-wrapper">
+                                                <h1>Agenda</h1>
+                                                <div class="owl-carousel" data-num="4">
+
+                                                    <div class="item news-post standard-post">
+                                                        <div class="post-gallery">
+                                                            <img src="{% static 'upload/news-posts/art1.jpg' %}" alt="">
+                                                        </div>
+                                                        <div class="post-content">
+                                                            <h2><a href="single-post.html">Donec odio. Quisque volutpat mattis eros. </a></h2>
+                                                            <ul class="post-tags">
+                                                                <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                                                <li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item news-post standard-post">
+                                                        <div class="post-gallery">
+                                                            <img src="{% static 'upload/news-posts/art2.jpg' %}" alt="">
+                                                        </div>
+                                                        <div class="post-content">
+                                                            <h2><a href="single-post.html">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. </a></h2>
+                                                            <ul class="post-tags">
+                                                                <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                                                <li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item news-post standard-post">
+                                                        <div class="post-gallery">
+                                                            <img src="{% static 'upload/news-posts/art3.jpg' %}" alt="">
+                                                        </div>
+                                                        <div class="post-content">
+                                                            <h2><a href="single-post.html">Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</a></h2>
+                                                            <ul class="post-tags">
+                                                                <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                                                <li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item news-post standard-post">
+                                                        <div class="post-gallery">
+                                                            <img src="{% static 'upload/news-posts/art5.jpg' %}" alt="">
+                                                        </div>
+                                                        <div class="post-content">
+                                                            <h2><a href="single-post.html">Donec nec justo eget felis facilisis fermentum. </a></h2>
+                                                            <ul class="post-tags">
+                                                                <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                                                <li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item news-post standard-post">
+                                                        <div class="post-gallery">
+                                                            <img src="{% static 'upload/news-posts/art6.jpg' %}" alt="">
+                                                        </div>
+                                                        <div class="post-content">
+                                                            <h2><a href="single-post.html">Donec nec justo eget felis facilisis fermentum. </a></h2>
+                                                            <ul class="post-tags">
+                                                                <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                                                <li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="politics-category.html">Elections</a></li>
+                        <li class="drop-arrow"><a href="politics-category.html">World</a>
+                            <div class="megadropdown">
+                                <div class="container">
+                                    <div class="inner-megadropdown tech-dropdown">
+
+                                        <div class="owl-wrapper">
+                                            <ul class="horizontal-filter-posts">
+                                                <li><a class="active" href="#">All</a></li>
+                                                <li><a href="#">Business</a></li>
+                                                <li><a href="#">Europe</a></li>
+                                                <li><a href="#">USA</a></li>
+                                                <li><a href="#">Money</a></li>
+                                            </ul>
+                                            <div class="owl-carousel" data-num="4">
+
+                                                <div class="item news-post standard-post">
+                                                    <div class="post-gallery">
+                                                        <img src="{% static 'upload/news-posts/art4.jpg' %}" alt="">
+                                                    </div>
+                                                    <div class="post-content">
+                                                        <h2><a href="single-post.html">Donec odio. Quisque volutpat mattis eros. </a></h2>
+                                                        <ul class="post-tags">
+                                                            <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                                            <li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item news-post standard-post">
+                                                    <div class="post-gallery">
+                                                        <img src="{% static 'upload/news-posts/art2.jpg' %}" alt="">
+                                                    </div>
+                                                    <div class="post-content">
+                                                        <h2><a href="single-post.html">Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. </a></h2>
+                                                        <ul class="post-tags">
+                                                            <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                                            <li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item news-post standard-post">
+                                                    <div class="post-gallery">
+                                                        <img src="{% static 'upload/news-posts/art3.jpg' %}" alt="">
+                                                    </div>
+                                                    <div class="post-content">
+                                                        <h2><a href="single-post.html">Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</a></h2>
+                                                        <ul class="post-tags">
+                                                            <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                                            <li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item news-post standard-post">
+                                                    <div class="post-gallery">
+                                                        <img src="{% static 'upload/news-posts/art6.jpg' %}" alt="">
+                                                    </div>
+                                                    <div class="post-content">
+                                                        <h2><a href="single-post.html">Donec nec justo eget felis facilisis fermentum. </a></h2>
+                                                        <ul class="post-tags">
+                                                            <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                                            <li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item news-post standard-post">
+                                                    <div class="post-gallery">
+                                                        <img src="{% static 'upload/news-posts/art1.jpg' %}" alt="">
+                                                    </div>
+                                                    <div class="post-content">
+                                                        <h2><a href="single-post.html">Donec nec justo eget felis facilisis fermentum. </a></h2>
+                                                        <ul class="post-tags">
+                                                            <li><i class="fa fa-clock-o"></i>27 may 2013</li>
+                                                            <li><a href="#"><i class="fa fa-comments-o"></i><span>23</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="politics-category.html">Nation</a></li>
+                        <li><a href="politics-category.html">Opinion</a></li>
+                        <li><a href="politics-category.html">Video</a></li>
+
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <input type="text" id="search" name="search" placeholder="Search here">
+                        <button type="submit" id="search-submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <!-- End navbar list container -->
+
+    </nav>
+    <!-- End Bootstrap navbar -->
+
+</header>
+<!-- End Header -->
